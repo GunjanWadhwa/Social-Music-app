@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <!-- Chat Icon -->
+    <a href="#chat-container" class="chat-bot">
+        <img src="https://cdn-icons-png.flaticon.com/128/1370/1370958.png" alt="">
+    </a>
+<!-- Chat Container -->
+    <div id="chat-container">
+
+        <div class="chats">
+            <h3>Friend's Activity
+                <a href="#"><i class="bi bi-x"></i></a>
+            </h3>
+            <ul>
+                <!-- Friends List -->
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator ">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator offline">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator ">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator offline">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator ">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator ">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="friends">
+                    <div class="friend-detail">
+                        <img src="https://media0.giphy.com/media/YRThiAEEYVNtC5acLO/200.webp?cid=ecf05e471dljdkvlfua86tcqy1213eippendbstc9ahezvr8&ep=v1_gifs_search&rid=200.webp&ct=g" alt="" class="friend-img">
+                        <span class="friend-name">Luffy</span>
+                    </div>
+                    <div class="status">
+                        <div class="status-indicator ">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Side bar -->
+        <div class="sidebar" id="sidebar-nav">
+            <div class="logo">
+                <a class="logo-text" href="#">gunjan studio <i class="bi bi-x-lg"></i></a>
+            </div>
+            <ul class="categories cat-container">
+                <li class="categories-item cat-item"><i class="bi bi-globe-americas"></i>Explore</li>
+                <li class="categories-item cat-item"><i class="bi bi-broadcast-pin"></i>Radio</li>
+                <li class="categories-item cat-item"><i class="bi bi-person-check"></i>Artists</li>
+                <li class="categories-item cat-item"><i class="bi bi-file-earmark-music"></i>Albums</li>
+            </ul>
+            <ul class="your-library cat-container">
+                <h3 class="cat-heading">Your library</h3>
+                <li class="library-item cat-item">Made for you</li>
+                <li class="library-item cat-item">Recently Played</li>
+
+            </ul>
+
+            <ul class="playlists cat-container">
+                <h3 class="cat-heading">Playlists</h3>
+                <li class="playlist-item cat-item">Starred</li>
+                <li class="playlist-item cat-item">Discover weekly</li>
+                <li class="playlist-item cat-item">Memories</li>
+
+
+            </ul>
+            <div class="create-playlist-btn">
+                Create New Playlist
+            </div>
+        </div>
+        <div class="music-container">
+            <!-- Navbar -->
+            <nav class="navbar">
+                <a id="nav-logo" href="#sidebar-nav">
+                    gunjan studio
+                </a>
+                <div class="search-container">
+                    <button class="search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <input type="text" placeholder="Search">
+                    <button class="voice">
+                        <i class="bi bi-mic-fill"></i>
+                    </button>
+                </div>
+
+                <!-- User details -->
+                <div class="user-details">
+                    <div class="user-image">
+
+                    </div>
+                    <div class="user-name">
+                        Gunjan
+                    </div>
+                    
+                </div>
+            </nav>
+            <h1 class="explore-heading">Explore <a href="#queue-container" id="queue-btn">Queue</a></h1>
+            <div class="container">
+
+                <div class="explore">
+                    <!-- carousel -->
+                    <div class="carousel">
+                        <div class="carousel-item">
+
+                            <div class="carousel-text">
+                                Chill Out Music
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="carousel-text">
+                                Party Music
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="carousel-text">
+                                Summer Music
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Latest Songs -->
+                    <div class="latest-songs song-sections">
+                        <h3 class="section-heading">Latest Songs <span>View all</span></h3>
+                        <ol class="latest-song-list">
+                            <li class="latest-song-li">
+                                <img src="https://i1.sndcdn.com/artworks-000190242652-g1z8sl-t500x500.jpg" alt="">
+                                <div class="latest-song-detail">
+                                    <h4>Story of my Life</h4>
+                                    <span>One Direction</span>
+                                </div>
+                                <span class="timer">
+                                    02:45
+                                </span>
+                                <i class="bi bi-play-fill"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </li>
+                            <li class="latest-song-li">
+                                <img src="https://i1.sndcdn.com/artworks-000057758930-7535ps-t500x500.jpg" alt="">
+                                <div class="latest-song-detail">
+                                    <h4>Firework</h4>
+                                    <span>Katty Perry</span>
+                                </div>
+                                <span class="timer">
+                                    02:16
+                                </span>
+                                <i class="bi bi-play-fill"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </li>
+                            <li class="latest-song-li">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Sia_Cheap_Thrills.png" alt="">
+                                <div class="latest-song-detail">
+                                    <h4>Cheap Thrills</h4>
+                                    <span>Sia</span>
+                                </div>
+                                <span class="timer">
+                                    02:59
+                                </span>
+                                <i class="bi bi-play-fill"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </li>
+                            <li class="latest-song-li">
+                                <img src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/11/do-gallan-lyrics-neha-kakkar.jpg"
+                                    alt="">
+                                <div class="latest-song-detail">
+                                    <h4>Do Gallan</h4>
+                                    <span>Neha Kakkar</span>
+                                </div>
+                                <span class="timer">
+                                    03:52
+                                </span>
+                                <i class="bi bi-play-fill"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </li>
+                            <li class="latest-song-li">
+                                <img src="https://c.saavncdn.com/990/Jhaanjar-From-Honeymoon-Punjabi-2022-20220929191104-500x500.jpg"
+                                    alt="">
+                                <div class="latest-song-detail">
+                                    <h4>Jhanjaar</h4>
+                                    <span>B Praak</span>
+                                </div>
+                                <span class="timer">
+                                    04:00
+                                </span>
+                                <i class="bi bi-play-fill"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </li>
+                            <li class="latest-song-li">
+                                <img src="https://c.saavncdn.com/264/Ranjha-From-Shershaah--Hindi-2021-20210804173407-500x500.jpg"
+                                    alt="">
+                                <div class="latest-song-detail">
+                                    <h4>Ranjha</h4>
+                                    <span>Jasleen Royal</span>
+                                </div>
+                                <span class="timer">
+                                    03:56
+                                </span>
+                                <i class="bi bi-play-fill"></i>
+                                <i class="bi bi-suit-heart-fill"></i>
+                            </li>
+
+                            </ul>
+                    </div>
+                    <!-- popular artists -->
+                    <div class="artists song-sections">
+                        <h3 class="section-heading">Artists <span>View all</span></h3>
+                        <div class="artist-list songs-list">
+                            <div class="artist">
+                                <div class="artist-img">
+                                    <img src="/assets/images/artists/arijitsingh.jpg" alt="">
+                                </div>
+                                <h4 class="artist-name">Arijit Singh</h4>
+                            </div>
+                            <div class="artist">
+                                <div class="artist-img">
+                                    <img src="https://i.timesnowhindi.com/stories/Sonu_Nigam_Net_Worth.jpg" alt="">
+                                </div>
+                                <h4 class="artist-name">Sonu Nigam</h4>
+                            </div>
+                            <div class="artist">
+                                <div class="artist-img">
+                                    <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1669033779/ds4bbdue5v8qcakdth4c.jpg"
+                                        alt="">
+                                </div>
+                                <h4 class="artist-name">Shreya Ghoshal</h4>
+                            </div>
+                            <div class="artist">
+                                <div class="artist-img">
+                                    <img src="https://thelistacademy.com/wp-content/uploads/2019/05/Neha_Kakkar_at_Filmcity.jpg"
+                                        alt="">
+                                </div>
+                                <h4 class="artist-name">Neha Kakkar</h4>
+                            </div>
+                            <div class="artist">
+                                <div class="artist-img">
+                                    <img src="https://images.herzindagi.info/image/2023/Mar/facts-about-alka-yagnik-life.jpg"
+                                        alt="">
+                                </div>
+                                <h4 class="artist-name">Alka Yagnik</h4>
+                            </div>
+                            <div class="artist">
+                                <div class="artist-img">
+                                    <img src="https://pbs.twimg.com/profile_images/1325662669085437952/a-z7pbpU_400x400.jpg"
+                                        alt="">
+                                </div>
+                                <h4 class="artist-name">Shaan</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stations -->
+                    <div class="stations song-sections">
+                        <h3 class="section-heading">Stations <span>View all</span></h3>
+                        <div class="songs-list stations-list">
+                            <div class="songs stations">
+                                <img src="https://m.media-amazon.com/images/I/713KuL9M7qL._AC_UF1000,1000_QL80_.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Hip Hop</h4>
+                                    <span>120 New Songs</span>
+                                </div>
+                            </div>
+                            <div class="songs stations">
+                                <img src="https://wallpapercave.com/wp/wp4131988.jpg" alt="">
+                                <div class="song-detail">
+                                    <h4>Latin</h4>
+                                    <span>120 New Songs</span>
+                                </div>
+                            </div>
+                            <div class="songs stations">
+                                <img src="https://www.cmuse.org/wp-content/uploads/2020/01/Characteristics-of-Folk-Music.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Folk</h4>
+                                    <span>120 New Songs</span>
+                                </div>
+                            </div>
+                            <div class="songs stations">
+                                <img src="https://w0.peakpx.com/wallpaper/407/183/HD-wallpaper-electronic-music-song.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Electronic</h4>
+                                    <span>120 New Songs</span>
+                                </div>
+                            </div>
+                            <div class="songs stations">
+                                <img src="https://c4.wallpaperflare.com/wallpaper/605/626/349/vintage-music-player-wallpaper-preview.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Oldies</h4>
+                                    <span>209 New Songs</span>
+                                </div>
+                            </div>
+                            <div class="songs stations">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ZkGi6_oeJhEy7SYqcmPR-5FaYFmwyKN9j3wl3oa7ZW1s72TnUzdMN_S4FwHeV4CFYJA&usqp=CAU"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Jazz</h4>
+                                    <span>190 New Songs</span>
+                                </div>
+                            </div>
+                            <div class="songs stations">
+                                <img src="https://images.unsplash.com/photo-1518893883800-45cd0954574b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZSUyMG11c2ljfGVufDB8fDB8fHww&w=1000&q=80"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Vintage</h4>
+                                    <span>120 New Songs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Latest english songs -->
+                    <div class="latest-english song-sections">
+                        <h3 class="section-heading">Latest English <span>View all</span></h3>
+                        <div class="songs-list">
+                            <div class="songs">
+                                <img src="https://pics.filmaffinity.com/Post_Malone_Swae_Lee_Sunflower_Music_Video-836039064-large.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Sunflower</h4>
+                                    <span>Post Malone</span>
+                                </div>
+                            </div>
+
+                            <div class="songs">
+                                <img src="https://i1.sndcdn.com/artworks-000190242652-g1z8sl-t500x500.jpg" alt="">
+                                <div class="song-detail">
+                                    <h4>Story of my Life</h4>
+                                    <span>One Direction</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://i1.sndcdn.com/artworks-000057758930-7535ps-t500x500.jpg" alt="">
+                                <div class="song-detail">
+                                    <h4>Firework</h4>
+                                    <span>Katty Perry</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Sia_Cheap_Thrills.png" alt="">
+                                <div class="song-detail">
+                                    <h4>Cheap Thrills</h4>
+                                    <span>Sia</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://americannoise.com/wp-content/uploads/2018/07/Taylor-Swift-Love-Story-1200x1200.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Love Story</h4>
+                                    <span>Taylor Swift</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://c.saavncdn.com/798/Faded-English-2017-500x500.jpg" alt="">
+                                <div class="song-detail">
+                                    <h4>Faded</h4>
+                                    <span>Alan Walker</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Perfect</h4>
+                                    <span>ED Sheeran</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Latest hindi songs -->
+                    <div class="latest-hindi song-sections">
+                        <h3 class="section-heading">Latest Hindi <span>View all</span></h3>
+                        <div class="songs-list">
+                            <div class="songs">
+                                <img src="https://c.saavncdn.com/264/Ranjha-From-Shershaah--Hindi-2021-20210804173407-500x500.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Ranjha</h4>
+                                    <span>Jasleen Royal</span>
+                                </div>
+                            </div>
+
+                            <div class="songs">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Vaaste_song_cover.jpeg" alt="">
+                                <div class="song-detail">
+                                    <h4>Vaaste</h4>
+                                    <span>Dhvani Bhanushali</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://c.saavncdn.com/990/Jhaanjar-From-Honeymoon-Punjabi-2022-20220929191104-500x500.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Jhanjaar</h4>
+                                    <span>B Praak</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://c.saavncdn.com/175/Qismat-Punjabi-2017-500x500.jpg" alt="">
+                                <div class="song-detail">
+                                    <h4>Qismat</h4>
+                                    <span>Jaani</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://i0.wp.com/99lyricstore.com/wp-content/uploads/2021/11/do-gallan-lyrics-neha-kakkar.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Do Gallan</h4>
+                                    <span>Neha Kakkar</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://cover.djpunjab.is/51086/300x700/babul-da-vehda--asees-kaur-.webp"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Babul Da Vehda</h4>
+                                    <span>Asees Kaur</span>
+                                </div>
+                            </div>
+                            <div class="songs">
+                                <img src="https://c.saavncdn.com/191/Kesariya-From-Brahmastra-Hindi-2022-20220717092820-500x500.jpg"
+                                    alt="">
+                                <div class="song-detail">
+                                    <h4>Kesariya</h4>
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Queue section -->
+                <div class="queue-section" id="queue-container">
+                    <div class="queue-song-list">
+                        <h3 class="queue-heading">Queue <span class="view-all">View All</span><a href="#"
+                                class="close-btn">Close</a></h3>
+
+                        <div class="queue-music-container">
+                            <img class="queue-img" src="/assets/images/queue/deathbed.jpg" alt="">
+                            <div class="queue-song-detail">
+                                <h5>DeathBed</h5>
+                                <h6>Powfu</h6>
+                            </div>
+                            <span class="timer">03:52</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img"
+                                src="https://i0.wp.com/hitzop.com/wp-content/uploads/2021/08/images-2021-08-13T101456.939.jpeg"
+                                alt="">
+                            <div class="queue-song-detail">
+                                <h5>Roar</h5>
+                                <h6>Katy Perry</h6>
+                            </div>
+                            <span class="timer">03:56</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img" src="https://i1.sndcdn.com/artworks-000110053205-qovc3r-t500x500.jpg"
+                                alt="">
+                            <div class="queue-song-detail">
+                                <h5>Sugar</h5>
+                                <h6>Maroon 5</h6>
+                            </div>
+                            <span class="timer">03:48</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img" src="https://i1.sndcdn.com/artworks-000131714331-p1sy5c-t500x500.jpg"
+                                alt="">
+                            <div class="queue-song-detail">
+                                <h5>Blank Space</h5>
+                                <h6>Taylor Swift</h6>
+                            </div>
+                            <span class="timer">02:56</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img"
+                                src="https://video-images.vice.com/articles/5bdc5a3b595ea80006133ac4/lede/1541167722339-6566802393fe8b882e0db98a0094e0b9.jpeg?crop=1xw:1xh;center,center&resize=1200:*"
+                                alt="">
+                            <div class="queue-song-detail">
+                                <h5>Firework</h5>
+                                <h6>Katy Perry</h6>
+                            </div>
+                            <span class="timer">03:54</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img"
+                                src="https://i1.sndcdn.com/artworks-xQBnEBMDz4DZQi5R-xHTJwQ-t500x500.jpg" alt="">
+                            <div class="queue-song-detail">
+                                <h5>Baarishein</h5>
+                                <h6>Anuv Jain</h6>
+                            </div>
+                            <span class="timer">03:51</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEsrjmfLQyIAOQsWPX1OtFkYlUpZU-L3mg4JjKjrzY9OR1FRv-jRi158vmWxCxb3hkYw&usqp=CAU"
+                                alt="">
+                            <div class="queue-song-detail">
+                                <h5>Vibe</h5>
+                                <h6>Diljit Dosanjh</h6>
+                            </div>
+                            <span class="timer">03:53</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img"
+                                src="https://i.scdn.co/image/ab67616d0000b2736cd85195fad6ae44d6e322a1" alt="">
+                            <div class="queue-song-detail">
+                                <h5>Bang Bang</h5>
+                                <h6>Benny Dayal</h6>
+                            </div>
+                            <span class="timer">03:58</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                        <div class="queue-music-container">
+                            <img class="queue-img"
+                                src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/11/Desk/2020_11$largeimg_191509572.jpg"
+                                alt="">
+                            <div class="queue-song-detail">
+                                <h5>Gone girl</h5>
+                                <h6>Badshah</h6>
+                            </div>
+                            <span class="timer">03:49</span>
+                            <span class="play-pause">
+                                <i class="bi bi-pause"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="queue-music-container">
+                        <img class="queue-img"
+                            src="https://pics.filmaffinity.com/Adele_Hello_Music_Video-938814499-large.jpg" alt="">
+                        <div class="queue-song-detail">
+                            <h5>Hello</h5>
+                            <h6>Adele</h6>
+                        </div>
+                        <span class="timer">03:52</span>
+                        <span class="play-pause">
+                            <i class="bi bi-pause"></i>
+                        </span>
+                    </div>
+                    <div class="queue-music-container">
+                        <img class="queue-img" src="https://i1.sndcdn.com/artworks-orxd3Qu4MvUnj9Wp-zpTayQ-t500x500.jpg"
+                            alt="">
+                        <div class="queue-song-detail">
+                            <h5>Levitating</h5>
+                            <h6>Dua Lupa</h6>
+                        </div>
+                        <span class="timer">03:50</span>
+                        <span class="play-pause">
+                            <i class="bi bi-pause"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Music bar -->
+    <footer class="music-bar">
+        <div class="musicbar-song">
+            <img class="playing-song" src="/assets/images/queue/deathbed.jpg" alt="">
+            <h5>DeathBed - Powfu</h5>
+        </div>
+        <div class="music-bar-controller">
+            <i class="bi bi-shuffle"></i>
+            <i class="bi bi-skip-backward-fill"></i>
+            <i class="bi bi-pause-circle"></i>
+            <i class="bi bi-skip-forward-fill"></i>
+            <i class="bi bi-repeat-1"></i>
+        </div>
+
+        <div class="music-playbar">
+            <span>0:00</span>
+            <div class="outer-bar">
+                <div class="inner-bar">
+
+                </div>
+            </div>
+            <span>03:56</span>
+        </div>
+        <div class="volume">
+            <i class="bi bi-volume-down-fill"></i>
+            <input class="volume-bar" type="range" name="" id="">
+        </div>
+    </footer>
+</body>
+
+</html>
